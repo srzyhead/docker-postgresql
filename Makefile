@@ -1,7 +1,5 @@
 all: build
 
 build:
-	@docker build --tag=sameersbn/postgresql .
+	@docker build --tag=srzyhead/postgresql:9.6 .
 
-release: build
-	@docker build --tag=sameersbn/postgresql:$(shell cat VERSION) .
